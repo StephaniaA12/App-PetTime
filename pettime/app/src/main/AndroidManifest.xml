@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PetTime"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PetTime">
+        <activity
+            android:name=".CarnetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarioActivity"
+            android:exported="false" /> <!-- Pantalla de registro -->
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MisMascotasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarMascotaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MisCitasActivity"
+            android:exported="false" /> <!-- Pantalla Agendar Cita -->
+        <activity
+            android:name=".AgendarCitaActivity"
+            android:exported="false" /> <!-- Pantalla de terminos y condiciones -->
+        <activity
+            android:name=".TerminosyCondicionesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" /> <!-- Pantalla principal -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- Pantalla de login (inicio de la app) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
